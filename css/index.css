@@ -1,0 +1,193 @@
+/* yuji shuku */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    right: -30px;
+    bottom: -30px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: animate 2s linear infinite
+}
+
+button:after {
+    animation-delay: 1s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(2.0);
+    }
+
+    100% {
+        transform: scale(0.6);
+    }
+}
+
+/*책장넘기기*/
+body {
+    perspective: 1000px;
+}
+
+#wrap {
+    position: relative;
+    height: 100%;
+    transform-origin: left center;
+    transition: 10s;
+    overflow: visible;
+}
+
+#background {
+    height: 100%;
+    background: url("../asset/pic/Trinity_College_Dublin.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#mask {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fade {
+    animation: fade 6s linear infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#mainText {
+    /*width: fit-content;
+    height: fit-content;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Yuji Syuku', serif;
+    /*color: #fff;*/
+    text-shadow:
+        /* White glow */
+        0 0 3.5px #fff,
+        0 0 5px #fff,
+        0 0 10.5px #fff,
+        /* Green glow */
+        0 0 21px #78dfff,
+        0 0 41px #78dfff,
+        0 0 46px #78dfff,
+        0 0 51px #78dfff,
+        0 0 75.5px #78dfff;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+text {
+    width: 100%;
+    height: 100%;
+}
+
+#thirdTxt{
+    font-size: 4vw;
+}
+
+span {
+    /*width: fit-content;
+    height: fit-content;*/
+    position: absolute;
+    top: 20vw;
+    left: 0;
+    font-family: 'Yuji Syuku', serif;
+    /*color: #fff;*/
+    text-shadow:
+        /* White glow */
+        0 0 3.5px #fff,
+        0 0 5px #fff,
+        0 0 10.5px #fff,
+        /* Green glow */
+        0 0 21px #78dfff,
+        0 0 41px #78dfff,
+        0 0 46px #78dfff,
+        0 0 51px #78dfff,
+        0 0 75.5px #78dfff;
+    transform: rotate(90deg);
+}
+
+@media (max-width:767px) {
+    #mainText {
+        font-size: 30vw;
+    }
+
+    button {
+        width: 8vw;
+        height: 8vw;
+        left: 85%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #mainText {
+        font-size: 22vw;
+    }
+
+    button {
+        width: 6vw;
+        height: 6vw;
+        left: 85%;
+    }
+}
+
+@media (min-width:1025px) {
+    #mainText {
+        font-size: 16vw;
+    }
+
+    button {
+        width: 4vw;
+        height: 4vw;
+        left: 85%;
+    }
+}
