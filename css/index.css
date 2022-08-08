@@ -130,16 +130,12 @@ text {
     height: 100%;
 }
 
-#thirdTxt{
-    font-size: 4vw;
-}
-
 span {
     /*width: fit-content;
     height: fit-content;*/
     position: absolute;
-    top: 20vw;
-    left: 0;
+    /* top: 20vw;
+    left: 0; */
     font-family: 'Yuji Syuku', serif;
     /*color: #fff;*/
     text-shadow:
@@ -147,13 +143,13 @@ span {
         0 0 3.5px #fff,
         0 0 5px #fff,
         0 0 10.5px #fff,
-        /* Green glow */
+        /* blue glow */
         0 0 21px #78dfff,
         0 0 41px #78dfff,
         0 0 46px #78dfff,
         0 0 51px #78dfff,
         0 0 75.5px #78dfff;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 
 @media (max-width:767px) {
@@ -165,6 +161,31 @@ span {
         width: 14vw;
         height: 14vw;
         left: 70%;
+        font-size: 3vw;
+    }
+
+    .thirdTxt{
+        font-size: 5.2vw;
+        text-align:start
+    }
+    .rot1{
+        left: 0vw;
+        width: 9vw;
+    }
+    .rot2{
+        left: 10vw;
+        width: 9vw;
+    }
+    .rot3{
+        left: 20vw;
+        width: 9vw;
+    }
+    #verticalWrite{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 100vw;
+        left: 5vw;
     }
 }
 
@@ -177,6 +198,31 @@ span {
         width: 8vw;
         height: 8vw;
         left: 80%;
+        font-size: 2.5vw;
+    }
+
+    .thirdTxt{
+        font-size: 3vw;
+        text-align:start
+    }
+    .rot1{
+        left: 0vw;
+        width: 3vw;
+    }
+    .rot2{
+        left: 3.5vw;
+        width: 3vw;
+    }
+    .rot3{
+        left: 7vw;
+        width: 3vw;
+    }
+    #verticalWrite{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 10vw;
+        left: 28vw;
     }
 }
 
@@ -189,5 +235,30 @@ span {
         width: 6vw;
         height: 6vw;
         left: 85%;
+        font-size: 1vw;
+    }
+
+    .thirdTxt{
+        font-size: 3vw;
+        text-align:start
+    }
+    .rot1{
+        left: 0vw;
+        width: 3vw;
+    }
+    .rot2{
+        left: 3.5vw;
+        width: 3vw;
+    }
+    .rot3{
+        left: 7vw;
+        width: 3vw;
+    }
+    #verticalWrite{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 8vw;
+        left: 23vw;
     }
 }

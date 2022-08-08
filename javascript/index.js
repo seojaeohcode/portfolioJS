@@ -67,4 +67,7 @@ if (firstWindow === true) {
 
 function flip() {
   document.getElementById("wrap").style.transform = 'rotateY(-180deg)'; 
+  setTimeout(() => {
+    location.href='../html/main.html'
+  }, 2000);
 }
