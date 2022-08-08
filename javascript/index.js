@@ -5,8 +5,7 @@ const pc = window.matchMedia(`(min-width:1025px)`);
 //글자 셀렉트
 const txt1 = document.querySelector("#firstTxt");
 const txt2 = document.querySelector("#secondTxt");
-const txt3 = document.querySelector("#thirdTxt");
-
+const button = document.querySelector('button');
 // 오프닝화면인지 체크
 let firstWindow = true;
 // 배경화면 사진배열
@@ -20,30 +19,33 @@ const backgroundPic = [
 if (mobile.matches === true) {
   txt1.setAttribute("y", "50vw");
   txt2.setAttribute("y", "90vw");
-  txt3.setAttribute("y", "50vw");
 } else if (tablet.matches === true) {
   txt1.setAttribute("y", "28vw");
   txt2.setAttribute("y", "55vw");
-  txt3.setAttribute("y", "28vw");
 } else if (pc.matches === true) {
   txt1.setAttribute("y", "20vw");
   txt2.setAttribute("y", "40vw");
-  txt3.setAttribute("y", "20vw");
 }
 
 window.addEventListener('resize', function() {
   if (mobile.matches === true) {
     txt1.setAttribute("y", "50vw");
     txt2.setAttribute("y", "90vw");
-    txt3.setAttribute("y", "50vw");
+    button.style.width = '14vw';
+    button.style.height = '14vw';
+    button.style.left = '70%'
   } else if (tablet.matches === true) {
     txt1.setAttribute("y", "28vw");
     txt2.setAttribute("y", "55vw");
-    txt3.setAttribute("y", "28vw");
+    button.style.width = '8vw';
+    button.style.height = '8vw';
+    button.style.left = '80%'
   } else if (pc.matches === true) {
     txt1.setAttribute("y", "20vw");
     txt2.setAttribute("y", "40vw");
-    txt3.setAttribute("y", "20vw");
+    button.style.width = '6vw';
+    button.style.height = '6vw';
+    button.style.left = '85%'
   }
 })
 

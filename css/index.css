@@ -162,9 +162,9 @@ span {
     }
 
     button {
-        width: 8vw;
-        height: 8vw;
-        left: 85%;
+        width: 14vw;
+        height: 14vw;
+        left: 70%;
     }
 }
 
@@ -174,9 +174,9 @@ span {
     }
 
     button {
-        width: 6vw;
-        height: 6vw;
-        left: 85%;
+        width: 8vw;
+        height: 8vw;
+        left: 80%;
     }
 }
 
@@ -186,8 +186,8 @@ span {
     }
 
     button {
-        width: 4vw;
-        height: 4vw;
+        width: 6vw;
+        height: 6vw;
         left: 85%;
     }
 }
