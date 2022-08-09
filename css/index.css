@@ -169,7 +169,7 @@ span {
         text-align:start
     }
     .rot1{
-        left: 0vw;
+        left: 12vw;
         width: 9vw;
     }
     .rot2{
@@ -184,7 +184,7 @@ span {
         position: absolute;
         width: fit-content;
         height: fit-content;
-        top: 100vw;
+        top: 95vw;
         left: 5vw;
     }
 }
@@ -202,7 +202,7 @@ span {
     }
 
     .thirdTxt{
-        font-size: 3vw;
+        font-size: 4vw;
         text-align:start
     }
     .rot1{
@@ -221,8 +221,8 @@ span {
         position: absolute;
         width: fit-content;
         height: fit-content;
-        top: 10vw;
-        left: 28vw;
+        top: 12vw;
+        left: 30vw;
     }
 }
 
