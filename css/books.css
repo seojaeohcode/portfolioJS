@@ -119,22 +119,9 @@ footer a {
     
     .mainText{
         font-size: 15vw;
-        color: black;
+        color: #F5E8C7;
         text-align: center;
         font-family: 'Tiro Gurmukhi', serif;
-        width: 90%;
-        margin: 0 auto;
-        background-color: #F5E8C7;
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-
-    .mainRight{
-        background-color: goldenrod;
-    }
-
-    .mainRight{
-
     }
 
     svg {
@@ -143,7 +130,7 @@ footer a {
     }
 
     footer a {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 

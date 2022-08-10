@@ -1,7 +1,10 @@
 let HeadText = document.querySelector('#HeadText');
+
 const menu = document.querySelector('#menu');
 let menubar = document.querySelector('#menubar');
 let isMenu = false;
+
+// let 
 
 // 헤더 텍스트
 const textAnim = 
@@ -37,3 +40,4 @@ menu.addEventListener('click', function() {
         isMenu = false;
     }
 })
+
