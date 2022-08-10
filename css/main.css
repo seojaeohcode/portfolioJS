@@ -71,6 +71,7 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
 @media (max-width:767px) {
     nav ul {
         background-color: rgba(255, 255, 255, 0.2);
@@ -111,6 +112,7 @@ footer a {
     
     #HeadText {
         margin-top: 1rem;
+        margin-bottom: 2rem;
         font-size: 10vw;
         color: #F5E8C7;
         font-weight: bold;
@@ -118,10 +120,6 @@ footer a {
     }
     
     .mainText{
-        font-size: 15vw;
-        color: black;
-        text-align: center;
-        font-family: 'Tiro Gurmukhi', serif;
         width: 90%;
         margin: 0 auto;
         background-color: #F5E8C7;
@@ -129,15 +127,66 @@ footer a {
         border-radius: 10px;
     }
 
-    .mainRight{
-        background-color: goldenrod;
+    .textArea{
+        margin-top: 1.5rem;
+        font-size: 15vw;
+        color: black;
+        text-align: center;
+        font-family: 'Tiro Gurmukhi', serif;
     }
 
-    .mainRight{
+    .slideArea{
+        text-align: center;
+    }
+    
+    .slideArea img{
+        width: 80vw;
+    }
 
+    .buttonBox{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .slideArea button:first-child{
+        float: right;
+        width: 20vw;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+    .slideArea button:first-child img{
+        width: 10vw;
+    }
+
+    .slideArea button:last-child{
+        float: left;
+        width: 20vw;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+
+    .slideArea button:last-child img{
+        width: 10vw;
+    }
+
+    .slideArea::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .buttonBox::after{
+        content: "";
+        display: block;
+        clear: both;
     }
 
     svg {
+        margin-top: 3rem;
         width: 12vw;
         height: 12vw;
     }
