@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../asset/favicon3/favicon.ico" />
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/books.css">
     <script src="../javascript/js.js"></script>
     <title>書標</title>
 </head>
@@ -23,15 +23,59 @@
                     </div>
                 </div>
                 <ul id="menubar">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">All Books</a></li>
-                    <li><a href="#">All Lectures</a></li>
+                    <li><a href="./main.html">About</a></li>
+                    <li><a href="./books.html">All Books</a></li>
+                    <li><a href="./lectures.html">All Lectures</a></li>
                 </ul>
             </nav>
             <p id="HeadText"></p>
         </header>
         <main>
-            
+            <div id="inputBox">
+                <form id="bookObj">
+                    <div id="phoneStart">
+                        <p id="mobileDate">00:00</p>
+                        <!-- <button id="appStart"></button> -->
+                        <button id="onOff" type="button"></button>
+                    </div>
+
+                    <div id="inputApp">
+                        <p id="formHeadText">Bought Book</p>
+                        <div>
+                            <p>Image</p>
+                            <input type="file" name="bookImage" id="bookImage" accept="image/*">
+                        </div>
+                        <div>
+                            <p>Title</p>
+                            <input type="text" id="title" name="title">
+                        </div>
+                        <div>
+                            <p>Auther</p>
+                            <input type="text" id="auther" name="auther">
+                        </div>
+                        <!-- <div>
+                            <p>Explain</p>
+                            <input type="text" id="explain" name="explain" minlength="4" maxlength="8"
+                                size="10">
+                        </div> -->
+                        <!-- <div>
+                            <p>Already Reading?</p>
+                            <input type="checkbox" id="complete" name="complete">
+                        </div> -->
+                        <div>
+                            <p>Submit</p>
+                            <button type="button" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="item">
+                <img src="../asset/testNode/3c856a69-e213-4394-8317-1469386b82cc.jpg" alt="">
+                <p>게임으로 배우는 react</p>
+                <p>조현영</p>
+                <form><input type="checkbox" name="" id=""></form>
+            </div>
         </main>
         <footer>
             <a href="https://github.com/seojaeohcode" target="_blank">
@@ -44,6 +88,6 @@
         </footer>
     </div>
 </body>
-<script src="../javascript/main.js"></script>
+<script src="../javascript/books.js"></script>
 
 </html>

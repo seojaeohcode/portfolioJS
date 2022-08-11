@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +38,6 @@ nav ul li:nth-child(3){
 
 #right{
     float: right;
-    margin-right: 1rem;
 }
 
 #navitems img:last-child{
@@ -69,7 +70,28 @@ footer svg{
 }
 footer a {
     text-decoration: none;
-    color: white;
+}
+
+.buzzAnim{
+    animation-duration: 0.5s;
+    animation-name: buzz;
+    animation-iteration-count: infinite;
+}
+#creator{
+    color: #fff; 
+    text-shadow: 
+    /* White glow */ 0 0 14px #fff, 0 0 20px #fff, 0 0 42px #fff
+}
+@keyframes buzz {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(-2deg); }
+    30% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(1deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
 }
 
 @media (max-width:767px) {
@@ -116,12 +138,12 @@ footer a {
         font-size: 10vw;
         color: #F5E8C7;
         font-weight: bold;
-        font-family: 'Oleo Script Swash Caps', cursive;
+        font-family: 'Cormorant SC', serif;
     }
     
     .mainText{
         width: 90%;
-        margin: 0 auto;
+        margin: 1rem auto;
         background-color: #F5E8C7;
         border: 2px solid white;
         border-radius: 10px;
@@ -129,7 +151,7 @@ footer a {
 
     .textArea{
         margin-top: 1.5rem;
-        font-size: 15vw;
+        font-size: 12vw;
         color: black;
         text-align: center;
         font-family: 'Tiro Gurmukhi', serif;
@@ -143,6 +165,159 @@ footer a {
         width: 80vw;
     }
 
+    .imgArea{
+        text-align: center;
+    }
+
+    .imgArea .recoItem img{
+        width: 80vw;
+        margin: 1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+    .imgArea .recoItem:last-child img{
+        margin-bottom: 6vw;
+    }
+    .buttonBox{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .slideArea button:first-child{
+        float: right;
+        width: 20vw;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+    .slideArea button:first-child img{
+        width: 10vw;
+    }
+
+    .slideArea button:last-child{
+        float: left;
+        width: 20vw;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+
+    .slideArea button:last-child img{
+        width: 10vw;
+    }
+
+    .slideArea::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .buttonBox::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    svg {
+        margin-top: 3rem;
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    #right{
+        margin-right: 1rem;
+    }
+
+    footer a {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    nav ul {
+        background-color: rgba(255, 255, 255, 0.2);
+        display: none;
+    }
+
+    nav ul li {
+        font-size: 10vw;
+        color: white;
+        font-family: 'Oleo Script Swash Caps', cursive;
+    }
+
+    nav ul li a {
+        font-size: 8vw;
+        text-decoration: none;
+    }
+
+    nav ul li a:link,:visited {
+        color: white;
+    }
+
+    #navitems img:first-child {
+        width: 23vw;
+    }
+
+    #navitems button{
+        width: 20vw;
+        height: 12vw;
+        font-size: 5vw;
+        margin-right: 1rem;
+        padding: 0 0.4rem 0 0.4rem;
+        border-radius: 10px;
+    }
+    
+    #navitems img:last-child {
+        width: 12vw;
+    }
+    
+    #HeadText {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 10vw;
+        color: #F5E8C7;
+        font-weight: bold;
+        font-family: 'Cormorant SC', serif;
+    }
+    
+    .mainText{
+        width: 90%;
+        margin: 1rem auto;
+        background-color: #F5E8C7;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .textArea{
+        margin-top: 1.5rem;
+        font-size: 12vw;
+        color: black;
+        text-align: center;
+        font-family: 'Tiro Gurmukhi', serif;
+    }
+
+    .slideArea{
+        text-align: center;
+    }
+    
+    .slideArea img{
+        width: 80vw;
+    }
+
+    .imgArea{
+        text-align: center;
+    }
+
+    .imgArea .recoItem img{
+        width: 80vw;
+        margin: 1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+    .imgArea .recoItem:last-child img{
+        margin-bottom: 6vw;
+    }
     .buttonBox{
         width: 90%;
         margin: 2rem auto;
@@ -191,11 +366,162 @@ footer a {
         height: 12vw;
     }
 
+    #right{
+        margin-right: 1rem;
+    }
+    
     footer a {
         font-size: 5vw;
     }
 }
 
-@media (min-width:768px) and (max-width:1024px) {}
+@media (min-width:1025px) {
+    nav ul {
+        background-color: rgba(255, 255, 255, 0.2);
+        display: none;
+    }
 
-@media (min-width:1025px) {}
+    nav ul li {
+        font-size: 6vw;
+        color: white;
+        font-family: 'Oleo Script Swash Caps', cursive;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+        text-decoration: none;
+    }
+
+    nav ul li a:link,:visited {
+        color: white;
+    }
+
+    #navitems img:first-child {
+        width: 23vw;
+    }
+
+    #navitems button{
+        width: 15vw;
+        height: 7vw;
+        font-size: 3vw;
+        margin-right: 1rem;
+        padding: 0 0.4rem 0 0.4rem;
+        border-radius: 10px;
+    }
+    
+    #navitems img:last-child {
+        width: 7vw;
+    }
+    
+    #HeadText {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 8vw;
+        color: #F5E8C7;
+        font-weight: bold;
+        font-family: 'Cormorant SC', serif;
+    }
+    
+    .mainText{
+        width: 70%;
+        background-color: #F5E8C7;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    .mainText:first-child{
+        margin: 1vw auto;
+    }
+    .mainText:last-child{
+        margin: 4vw auto;
+    }
+
+    .textArea{
+        margin-top: 1.5rem;
+        font-size: 10vw;
+        color: black;
+        text-align: center;
+        font-family: 'Tiro Gurmukhi', serif;
+    }
+
+    .slideArea{
+        text-align: center;
+    }
+    
+    .slideArea img{
+        width: 40vw;
+        height: 60vw;
+    }
+
+    .imgArea{
+        text-align: center;
+    }
+
+    .imgArea .recoItem img{
+        width: 50vw;
+        margin: 1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .imgArea .recoItem:last-child img{
+        margin-bottom: 5vw;
+    }
+
+    .buttonBox{
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    .slideArea button:first-child{
+        float: right;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+    .slideArea button:first-child img{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .slideArea button:last-child{
+        float: left;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        background: transparent;
+        border: none;
+    }
+
+    .slideArea button:last-child img{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .slideArea::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .buttonBox::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    svg {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #right{
+        margin-right: 1rem;
+        margin-top: 6vw;
+    }
+    
+    footer a {
+        font-family: 'Cormorant SC', serif;
+        font-size: 3vw;
+    }
+}
