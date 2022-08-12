@@ -166,7 +166,7 @@ form div {
     margin: 2rem auto;
 }
 
-#inputApp div p{
+#inputApp div p {
     font-size: 8vw;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
@@ -174,12 +174,32 @@ form div {
     color: white;
 }
 
-#submit{
+#submit {
     width: 16vw;
     height: 6vw;
 }
 
-.item{
+#controlBox {
+    text-align: center;
+    margin: 6vw auto;
+}
+
+#controlBox button {
+    background: rgb(131, 6, 6);
+    background: linear-gradient(0deg, rgba(131, 6, 6, 1) 0%, rgb(180, 12, 12) 100%);
+    border: none;
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    font-size: 6vw;
+}
+
+#controlBox button:hover {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(251, 251, 2) 100%);
+}
+
+/* .item{
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -193,7 +213,7 @@ form div {
 .item img{
     width: 80vw;
     margin-top: 4vw;
-}
+} */
 @media (max-width:767px) {
     nav ul {
         background-color: rgba(255, 255, 255, 0.2);
