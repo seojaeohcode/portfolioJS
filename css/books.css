@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -150,9 +151,9 @@ form {
     text-align: center;
 }
 
-#bookImage {
+/* #bookImage {
     width: 23vw;
-}
+} */
 
 form div {
     margin: 1vw auto;
@@ -173,6 +174,21 @@ form div {
     font-family: 'Pacifico', cursive;
     color: white;
 }
+#inputApp input[type=text]{
+    width: 40vw;
+    height: 4vw;
+    font-size: 5vw;
+}
+#inputApp input[type=file]{
+    width: 40vw;
+    height: 6vw;
+    font-size: 4vw;
+}
+#inputApp button{
+    width: 30vw;
+    height: 8vw;
+    font-size: 5vw;
+}
 
 #submit {
     width: 16vw;
@@ -182,6 +198,7 @@ form div {
 #controlBox {
     text-align: center;
     margin: 6vw auto;
+    /* font-family: 'EB Garamond', serif; */
 }
 
 #controlBox button {
@@ -192,11 +209,16 @@ form div {
     width: 25vw;
     height: 25vw;
     font-size: 6vw;
+    font-family: 'EB Garamond', serif;
+    box-shadow: 0px -6px 5px rgb(131, 6, 6);
+    /* color: white; */
 }
 
 #controlBox button:hover {
     background: rgb(255, 0, 0);
     background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(251, 251, 2) 100%);
+    box-shadow: 0px -6px 5px rgb(255, 0, 0);
+    /* color: black; */
 }
 
 /* .item{
