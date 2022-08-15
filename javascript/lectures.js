@@ -95,21 +95,6 @@ if (localStorage.length > 0) {
       let p2 = document.createElement("p");
       let p2TextNode = document.createTextNode("Auther: " + array[3]);
 
-      // let form = document.createElement("form");
-      // let checkbox = document.createElement("input");
-      // checkbox.setAttribute("type", "checkbox");
-      // // console.log(array);
-      // checkbox.id = "read";
-      // // array[3] == true ? checkbox.checked = true : checkbox.checked = false;
-      // array[4] == "true" ? (checkbox.checked = true) : (checkbox.checked = false);
-
-      // let span = document.createElement("span");
-      // let spanTxt = document.createTextNode("Read: ");
-
-      // let Delete = document.createElement("button");
-      // Delete.id = "DeleteBook";
-      // Delete.textContent = "Delete";
-
       if (mobile.matches === true) {
         div.style.width = "90%";
         div.style.margin = "3vw auto";
@@ -206,27 +191,26 @@ if (localStorage.length > 0) {
       div.appendChild(p2);
       document.querySelector("main").appendChild(div);
     }
+  }
+  if (allRead) {
+    let TxtBox = document.createElement("div");
+    let noBook1 = document.createElement("p");
+    let noBook1TextNode = document.createTextNode("Great!");
+    let noBook2 = document.createElement("p");
+    let noBook2TextNode = document.createTextNode("All Clear!");
+    TxtBox.style.color = "white";
+    TxtBox.style.textAlign = "center";
+    TxtBox.style.fontSize = "12vw";
+    TxtBox.style.fontFamily = "'EB Garamond', serif";
+    noBook1.style.textShadow =
+      "0 0 10px #0fa, 0 0 20px #0fa, 0 0 23px #0fa, 0 0 25px #0fa, 0 0 38px #0fa";
+    noBook2.style.textShadow =
+      "0 0 10px #0fa, 0 0 20px #0fa, 0 0 23px #0fa, 0 0 25px #0fa, 0 0 38px #0fa";
+    noBook1.appendChild(noBook1TextNode);
+    noBook2.appendChild(noBook2TextNode);
+    TxtBox.appendChild(noBook1);
+    TxtBox.appendChild(noBook2);
 
-    if (allRead) {
-      let TxtBox = document.createElement("div");
-      let noBook1 = document.createElement("p");
-      let noBook1TextNode = document.createTextNode("Great!");
-      let noBook2 = document.createElement("p");
-      let noBook2TextNode = document.createTextNode("All Clear!");
-      TxtBox.style.color = "white";
-      TxtBox.style.textAlign = "center";
-      TxtBox.style.fontSize = "12vw";
-      TxtBox.style.fontFamily = "'EB Garamond', serif";
-      noBook1.style.textShadow =
-        "0 0 10px #0fa, 0 0 20px #0fa, 0 0 23px #0fa, 0 0 25px #0fa, 0 0 38px #0fa";
-      noBook2.style.textShadow =
-        "0 0 10px #0fa, 0 0 20px #0fa, 0 0 23px #0fa, 0 0 25px #0fa, 0 0 38px #0fa";
-      noBook1.appendChild(noBook1TextNode);
-      noBook2.appendChild(noBook2TextNode);
-      TxtBox.appendChild(noBook1);
-      TxtBox.appendChild(noBook2);
-
-      document.querySelector("main").appendChild(TxtBox);
-    }
+    document.querySelector("main").appendChild(TxtBox);
   }
 }
