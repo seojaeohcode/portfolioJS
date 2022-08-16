@@ -548,7 +548,8 @@ form div {
     }
 
     #navitems img:first-child {
-        width: 23vw;
+        padding-top: 3vw;
+        width: 16vw;
     }
 
     #navitems button {
