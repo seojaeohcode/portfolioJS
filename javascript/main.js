@@ -93,3 +93,7 @@ for (let i = 0; i < imgSet.length; i++) {
         imgSet[i].classList.remove('buzzAnim');
     });
 }
+
+document.querySelector('#logo').addEventListener('click', function () {
+    location.href = "../html/main.html";
+  })

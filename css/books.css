@@ -87,131 +87,10 @@ footer a {
         0 0 14px #fff, 0 0 20px #fff, 0 0 42px #fff
 }
 
-#phoneStart {
-    display: block;
-    height: 120vw;
-    margin: 0;
-    position: relative;
-}
-
-#phoneStart #mobileDate {
-    color: white;
-    font-size: 20vw;
-    margin: 2rem auto;
-}
-
-/* #appStart {
-    background: none;
-    border: none;
-    border-radius: 2rem;
-    width: 20vw;
-    height: 20vw;
-    float: left;
-    margin-top: 20vw;
-    margin-left: 12vw;
-    background-image: url(../asset/formImg/1519778_book_colorful_notebook_office_school_icon.svg);
-    background-size:cover;
-    background-repeat: no-repeat;
-
-} */
-
-#onOff {
-    width: 10vw;
-    height: 10vw;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
-    position: absolute;
-    top: 96%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-
-#inputApp {
-    display: none;
-    height: 120vw;
-    margin: 0;
-    position: relative;
-}
-
-#inputBox {
-    width: 90%;
-    margin: 0 auto;
-    border: 2px solid white;
-    border-radius: 1rem;
-    background: #4568DC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #B06AB3, #4568DC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-form {
-    text-align: center;
-}
-
-/* #bookImage {
-    width: 23vw;
-} */
-
-form div {
-    margin: 1vw auto;
-}
-
-#formHeadText {
-    color: white;
-    font-size: 10vw;
-    /* font-weight: bold; */
-    font-family: 'Pacifico', cursive;
-    margin: 2rem auto;
-}
-
-#inputApp div p {
-    font-size: 8vw;
-    margin-top: 1.5vw;
-    margin-bottom: 1.5vw;
-    font-family: 'Pacifico', cursive;
-    color: white;
-}
-#inputApp input[type=text]{
-    width: 40vw;
-    height: 4vw;
-    font-size: 5vw;
-}
-#inputApp input[type=file]{
-    width: 40vw;
-    height: 6vw;
-    font-size: 4vw;
-}
-#inputApp button{
-    width: 30vw;
-    height: 8vw;
-    font-size: 5vw;
-}
-
-#submit {
-    width: 16vw;
-    height: 6vw;
-}
-
 #controlBox {
     text-align: center;
     margin: 6vw auto;
     /* font-family: 'EB Garamond', serif; */
-}
-
-#controlBox button {
-    background: rgb(131, 6, 6);
-    background: linear-gradient(0deg, rgba(131, 6, 6, 1) 0%, rgb(180, 12, 12) 100%);
-    border: none;
-    border-radius: 50%;
-    width: 25vw;
-    height: 25vw;
-    font-size: 6vw;
-    font-family: 'EB Garamond', serif;
-    box-shadow: 0px -6px 5px rgb(131, 6, 6);
-    /* color: white; */
 }
 
 #controlBox button:hover {
@@ -378,6 +257,109 @@ form div {
     footer a {
         font-size: 5vw;
     }
+
+    #controlBox button {
+        background: rgb(131, 6, 6);
+        background: linear-gradient(0deg, rgba(131, 6, 6, 1) 0%, rgb(180, 12, 12) 100%);
+        border: none;
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+        font-size: 6vw;
+        font-family: 'EB Garamond', serif;
+        box-shadow: 0px -6px 5px rgb(131, 6, 6);
+        /* color: white; */
+    }
+
+    #phoneStart {
+        display: block;
+        height: 120vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #phoneStart #mobileDate {
+        color: white;
+        font-size: 20vw;
+        margin: 2rem auto;
+    }
+    
+    #onOff {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    
+    #inputApp {
+        display: none;
+        height: 120vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #inputBox {
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid white;
+        border-radius: 1rem;
+        background: #4568DC;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    form div {
+        margin: 1vw auto;
+    }
+    
+    #formHeadText {
+        color: white;
+        font-size: 10vw;
+        /* font-weight: bold; */
+        font-family: 'Pacifico', cursive;
+        margin: 2rem auto;
+    }
+    
+    #inputApp div p {
+        font-size: 8vw;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        font-family: 'Pacifico', cursive;
+        color: white;
+    }
+    #inputApp input[type=text]{
+        width: 40vw;
+        height: 4vw;
+        font-size: 5vw;
+    }
+    #inputApp input[type=file]{
+        width: 40vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+    #inputApp button{
+        width: 30vw;
+        height: 8vw;
+        font-size: 5vw;
+    }
+    
+    #submit {
+        width: 16vw;
+        height: 6vw;
+    }
+    
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -512,8 +494,8 @@ form div {
 
     svg {
         margin-top: 3rem;
-        width: 12vw;
-        height: 12vw;
+        width: 10vw;
+        height: 10vw;
     }
 
     #right {
@@ -521,8 +503,111 @@ form div {
     }
 
     footer a {
+        font-size: 4vw;
+    }
+
+    #controlBox button {
+        background: rgb(131, 6, 6);
+        background: linear-gradient(0deg, rgba(131, 6, 6, 1) 0%, rgb(180, 12, 12) 100%);
+        border: none;
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        font-size: 5vw;
+        font-family: 'EB Garamond', serif;
+        box-shadow: 0px -6px 5px rgb(131, 6, 6);
+        /* color: white; */
+    }
+
+    #phoneStart {
+        display: block;
+        height: 100vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #phoneStart #mobileDate {
+        color: white;
+        font-size: 15vw;
+        margin: 2rem auto;
+    }
+    
+    #onOff {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    
+    #inputApp {
+        display: none;
+        height: 100vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #inputBox {
+        width: 70%;
+        margin: 0 auto;
+        border: 2px solid white;
+        border-radius: 1rem;
+        background: #4568DC;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    form div {
+        margin: 1vw auto;
+    }
+    
+    #formHeadText {
+        color: white;
+        font-size: 8vw;
+        /* font-weight: bold; */
+        font-family: 'Pacifico', cursive;
+        margin: 2rem auto;
+    }
+    
+    #inputApp div p {
+        font-size: 6vw;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        font-family: 'Pacifico', cursive;
+        color: white;
+    }
+    #inputApp input[type=text]{
+        width: 35vw;
+        height: 3vw;
+        font-size: 3vw;
+    }
+    #inputApp input[type=file]{
+        width: 40vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+    #inputApp button{
+        width: 25vw;
+        height: 6vw;
         font-size: 5vw;
     }
+    
+    #submit {
+        width: 16vw;
+        height: 6vw;
+    }
+    
 }
 
 @media (min-width:1025px) {
@@ -678,4 +763,107 @@ form div {
         font-family: 'Cormorant SC', serif;
         font-size: 3vw;
     }
+
+    #controlBox button {
+        background: rgb(131, 6, 6);
+        background: linear-gradient(0deg, rgba(131, 6, 6, 1) 0%, rgb(180, 12, 12) 100%);
+        border: none;
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        font-size: 4vw;
+        font-family: 'EB Garamond', serif;
+        box-shadow: 0px -6px 5px rgb(131, 6, 6);
+        /* color: white; */
+    }
+
+    #phoneStart {
+        display: block;
+        height: 85vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #phoneStart #mobileDate {
+        color: white;
+        font-size: 15vw;
+        margin: 2rem auto;
+    }
+    
+    #onOff {
+        width: 8vw;
+        height: 8vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+        top: 96%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    
+    #inputApp {
+        display: none;
+        height: 85vw;
+        margin: 0;
+        position: relative;
+    }
+    
+    #inputBox {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid white;
+        border-radius: 1rem;
+        background: #4568DC;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #B06AB3, #4568DC);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    form div {
+        margin: 1vw auto;
+    }
+    
+    #formHeadText {
+        color: white;
+        font-size: 6vw;
+        /* font-weight: bold; */
+        font-family: 'Pacifico', cursive;
+        margin: 2rem auto;
+    }
+    
+    #inputApp div p {
+        font-size: 5vw;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        font-family: 'Pacifico', cursive;
+        color: white;
+    }
+    #inputApp input[type=text]{
+        width: 30vw;
+        height: 3vw;
+        font-size: 3vw;
+    }
+    #inputApp input[type=file]{
+        width: 30vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+    #inputApp button{
+        width: 30vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+    
+    #submit {
+        width: 16vw;
+        height: 6vw;
+    }
+    
 }

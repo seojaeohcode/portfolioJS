@@ -227,13 +227,13 @@ if (localStorage.length > 0) {
           Delete.style.fontSize = "6vw";
           Delete.style.fontFamily = "'EB Garamond', serif";
         } else if (tablet.matches === true) {
-          div.style.width = "90%";
+          div.style.width = "85%";
           div.style.margin = "3vw auto";
           div.style.textAlign = "center";
           div.style.backgroundColor = "#F5E8C7";
           div.style.borderRadius = "10px";
           div.style.marginTop = "4vw";
-          div.style.fontSize = "10vw";
+          div.style.fontSize = "8vw";
           div.style.color = "black";
           // div.style.fontWeight = "bold";
           div.style.fontFamily = "'EB Garamond', serif";
@@ -249,7 +249,7 @@ if (localStorage.length > 0) {
           span.style.textShadow = "0px 2px 2px gray";
           // span.style.verticalAlign = "middle";
 
-          bookImg.style.width = "80vw";
+          bookImg.style.width = "70vw";
           bookImg.style.marginTop = "4vw";
 
           checkbox.style.width = "5.5vw";
@@ -267,13 +267,13 @@ if (localStorage.length > 0) {
           Delete.style.fontSize = "6vw";
           Delete.style.fontFamily = "'EB Garamond', serif";
         } else if (pc.matches === true) {
-          div.style.width = "90%";
+          div.style.width = "45%";
           div.style.margin = "3vw auto";
           div.style.textAlign = "center";
           div.style.backgroundColor = "#F5E8C7";
           div.style.borderRadius = "10px";
           div.style.marginTop = "4vw";
-          div.style.fontSize = "10vw";
+          div.style.fontSize = "4vw";
           div.style.color = "black";
           // div.style.fontWeight = "bold";
           div.style.fontFamily = "'EB Garamond', serif";
@@ -289,22 +289,23 @@ if (localStorage.length > 0) {
           span.style.textShadow = "0px 2px 2px gray";
           // span.style.verticalAlign = "middle";
 
-          bookImg.style.width = "80vw";
+          bookImg.style.width = "30vw";
           bookImg.style.marginTop = "4vw";
 
-          checkbox.style.width = "5.5vw";
-          checkbox.style.height = "5.5vw";
+          checkbox.style.width = "3.5vw";
+          checkbox.style.height = "3.5vw";
           checkbox.style.verticalAlign = "middle";
           checkbox.style.marginBottom = "0.5rem";
 
+          Delete.style.marginTop = "2vw";
           Delete.style.marginBottom = "4vw";
-          Delete.style.width = "20vw";
-          Delete.style.height = "10vw";
+          Delete.style.width = "15vw";
+          Delete.style.height = "8vw";
           Delete.style.border = "1px solid black";
           Delete.style.borderRadius = "1rem";
           Delete.style.background = "transparent";
           Delete.style.boxShadow = "0px 5px 5px black";
-          Delete.style.fontSize = "6vw";
+          Delete.style.fontSize = "4vw";
           Delete.style.fontFamily = "'EB Garamond', serif";
         }
 
@@ -418,7 +419,7 @@ document.querySelector("#submit").addEventListener("click", function () {
 
       if (mobile.matches === true) {
         div.style.width = "90%";
-        div.style.margin = "0 auto";
+        div.style.margin = "3vw auto";
         div.style.textAlign = "center";
         div.style.backgroundColor = "#F5E8C7";
         div.style.borderRadius = "10px";
@@ -435,21 +436,30 @@ document.querySelector("#submit").addEventListener("click", function () {
         p1.style.paddingTop = "3vw";
         p1.style.textShadow = "0px 2px 2px gray";
         p2.style.textShadow = "0px 2px 2px gray";
+
         span.style.textShadow = "0px 2px 2px gray";
+        // span.style.verticalAlign = "middle";
 
         bookImg.style.width = "80vw";
         bookImg.style.marginTop = "4vw";
 
-        Delete.style.marginBottom = "1vw";
-        Delete.style.width = "15vw";
+        checkbox.style.width = "5.5vw";
+        checkbox.style.height = "5.5vw";
+        checkbox.style.verticalAlign = "middle";
+        checkbox.style.marginBottom = "0.5rem";
+
+        Delete.style.marginBottom = "4vw";
+        Delete.style.width = "20vw";
         Delete.style.height = "10vw";
         Delete.style.border = "1px solid black";
         Delete.style.borderRadius = "1rem";
         Delete.style.background = "transparent";
         Delete.style.boxShadow = "0px 5px 5px black";
+        Delete.style.fontSize = "6vw";
+        Delete.style.fontFamily = "'EB Garamond', serif";
       } else if (tablet.matches === true) {
         div.style.width = "90%";
-        div.style.margin = "0 auto";
+        div.style.margin = "3vw auto";
         div.style.textAlign = "center";
         div.style.backgroundColor = "#F5E8C7";
         div.style.borderRadius = "10px";
@@ -466,49 +476,68 @@ document.querySelector("#submit").addEventListener("click", function () {
         p1.style.paddingTop = "3vw";
         p1.style.textShadow = "0px 2px 2px gray";
         p2.style.textShadow = "0px 2px 2px gray";
+
         span.style.textShadow = "0px 2px 2px gray";
+        // span.style.verticalAlign = "middle";
 
         bookImg.style.width = "80vw";
         bookImg.style.marginTop = "4vw";
 
-        Delete.style.marginBottom = "1vw";
-        Delete.style.width = "15vw";
+        checkbox.style.width = "5.5vw";
+        checkbox.style.height = "5.5vw";
+        checkbox.style.verticalAlign = "middle";
+        checkbox.style.marginBottom = "0.5rem";
+
+        Delete.style.marginBottom = "4vw";
+        Delete.style.width = "20vw";
         Delete.style.height = "10vw";
         Delete.style.border = "1px solid black";
         Delete.style.borderRadius = "1rem";
         Delete.style.background = "transparent";
         Delete.style.boxShadow = "0px 5px 5px black";
+        Delete.style.fontSize = "6vw";
+        Delete.style.fontFamily = "'EB Garamond', serif";
       } else if (pc.matches === true) {
-        div.style.width = "90%";
-        div.style.margin = "0 auto";
-        div.style.textAlign = "center";
-        div.style.backgroundColor = "#F5E8C7";
-        div.style.borderRadius = "10px";
-        div.style.marginTop = "4vw";
-        div.style.fontSize = "10vw";
-        div.style.color = "black";
-        // div.style.fontWeight = "bold";
-        div.style.fontFamily = "'EB Garamond', serif";
-        div.style.boxShadow = "0px 5px 5px white";
+        div.style.width = "45%";
+          div.style.margin = "3vw auto";
+          div.style.textAlign = "center";
+          div.style.backgroundColor = "#F5E8C7";
+          div.style.borderRadius = "10px";
+          div.style.marginTop = "4vw";
+          div.style.fontSize = "4vw";
+          div.style.color = "black";
+          // div.style.fontWeight = "bold";
+          div.style.fontFamily = "'EB Garamond', serif";
+          div.style.boxShadow = "0px 5px 5px white";
 
-        // numberRing.style.paddingTop = "3vw";
-        numberRing.style.display = "none";
+          // numberRing.style.paddingTop = "3vw";
+          numberRing.style.display = "none";
 
-        p1.style.paddingTop = "3vw";
-        p1.style.textShadow = "0px 2px 2px gray";
-        p2.style.textShadow = "0px 2px 2px gray";
-        span.style.textShadow = "0px 2px 2px gray";
+          p1.style.paddingTop = "3vw";
+          p1.style.textShadow = "0px 2px 2px gray";
+          p2.style.textShadow = "0px 2px 2px gray";
 
-        bookImg.style.width = "80vw";
-        bookImg.style.marginTop = "4vw";
+          span.style.textShadow = "0px 2px 2px gray";
+          // span.style.verticalAlign = "middle";
 
-        Delete.style.marginBottom = "1vw";
-        Delete.style.width = "15vw";
-        Delete.style.height = "10vw";
-        Delete.style.border = "1px solid black";
-        Delete.style.borderRadius = "1rem";
-        Delete.style.background = "transparent";
-        Delete.style.boxShadow = "0px 5px 5px black";
+          bookImg.style.width = "30vw";
+          bookImg.style.marginTop = "4vw";
+
+          checkbox.style.width = "3.5vw";
+          checkbox.style.height = "3.5vw";
+          checkbox.style.verticalAlign = "middle";
+          checkbox.style.marginBottom = "0.5rem";
+
+          Delete.style.marginTop = "2vw";
+          Delete.style.marginBottom = "4vw";
+          Delete.style.width = "15vw";
+          Delete.style.height = "8vw";
+          Delete.style.border = "1px solid black";
+          Delete.style.borderRadius = "1rem";
+          Delete.style.background = "transparent";
+          Delete.style.boxShadow = "0px 5px 5px black";
+          Delete.style.fontSize = "4vw";
+          Delete.style.fontFamily = "'EB Garamond', serif";
       }
 
       numberRing.appendChild(numberRingTextNode);
@@ -643,3 +672,7 @@ for (let i = 0; i < delBtn.length; i++) {
 for (let i = 0; i < checkBtn.length; i++) {
   checkBtn[i].addEventListener("click", checkItem);
 }
+
+document.querySelector('#logo').addEventListener('click', function () {
+  location.href = "../html/main.html";
+})

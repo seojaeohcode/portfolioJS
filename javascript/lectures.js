@@ -114,20 +114,20 @@ if (localStorage.length > 0) {
         p1.style.paddingTop = "3vw";
         p1.style.textShadow = "0px 2px 2px gray";
         p2.style.textShadow = "0px 2px 2px gray";
-
+        p2.style.paddingBottom = "3vw";
         // span.style.textShadow = "0px 2px 2px gray";
         // span.style.verticalAlign = "middle";
 
         bookImg.style.width = "80vw";
         bookImg.style.marginTop = "4vw";
       } else if (tablet.matches === true) {
-        div.style.width = "90%";
-        div.style.margin = "0 auto";
+        div.style.width = "85%";
+        div.style.margin = "3vw auto";
         div.style.textAlign = "center";
         div.style.backgroundColor = "#F5E8C7";
         div.style.borderRadius = "10px";
         div.style.marginTop = "4vw";
-        div.style.fontSize = "10vw";
+        div.style.fontSize = "8vw";
         div.style.color = "black";
         // div.style.fontWeight = "bold";
         div.style.fontFamily = "'EB Garamond', serif";
@@ -139,18 +139,19 @@ if (localStorage.length > 0) {
         p1.style.paddingTop = "3vw";
         p1.style.textShadow = "0px 2px 2px gray";
         p2.style.textShadow = "0px 2px 2px gray";
+        p2.style.paddingBottom = "1vw";
         // span.style.textShadow = "0px 2px 2px gray";
 
-        bookImg.style.width = "80vw";
+        bookImg.style.width = "70vw";
         bookImg.style.marginTop = "4vw";
       } else if (pc.matches === true) {
-        div.style.width = "90%";
-        div.style.margin = "0 auto";
+        div.style.width = "45%";
+        div.style.margin = "3vw auto";
         div.style.textAlign = "center";
         div.style.backgroundColor = "#F5E8C7";
         div.style.borderRadius = "10px";
         div.style.marginTop = "4vw";
-        div.style.fontSize = "10vw";
+        div.style.fontSize = "4vw";
         div.style.color = "black";
         // div.style.fontWeight = "bold";
         div.style.fontFamily = "'EB Garamond', serif";
@@ -162,34 +163,37 @@ if (localStorage.length > 0) {
         p1.style.paddingTop = "3vw";
         p1.style.textShadow = "0px 2px 2px gray";
         p2.style.textShadow = "0px 2px 2px gray";
+        p2.style.paddingBottom = "1vw";
         // span.style.textShadow = "0px 2px 2px gray";
 
-        bookImg.style.width = "80vw";
+        bookImg.style.width = "40vw";
         bookImg.style.marginTop = "4vw";
       }
-      
-      let TxtBox = document.createElement("div");
-      let remainBook1 = document.createElement("p");
-      let remainBook1TextNode = document.createTextNode("remain: "+remain);
-      TxtBox.style.color = "white";
-      TxtBox.style.textAlign = "center";
-      TxtBox.style.fontSize = "12vw";
-      TxtBox.style.fontFamily = "'EB Garamond', serif";
-      remainBook1.style.textShadow =
-      "0 0 10px rgb(255, 72, 0), 0 0 20px rgb(255, 72, 0), 0 0 23px rgb(255, 72, 0), 0 0 25px rgb(255, 72, 0), 0 0 38px rgb(255, 72, 0)";
-      remainBook1.appendChild(remainBook1TextNode);
-      TxtBox.appendChild(remainBook1);
-      document.querySelector("main").appendChild(TxtBox);
+        numberRing.appendChild(numberRingTextNode);
+        p1.appendChild(p1TextNode);
+        p2.appendChild(p2TextNode);
 
-      numberRing.appendChild(numberRingTextNode);
-      p1.appendChild(p1TextNode);
-      p2.appendChild(p2TextNode);
+        div.appendChild(p1);
+        div.appendChild(numberRing);
+        div.appendChild(bookImg);
+        div.appendChild(p2);
+        document.querySelector("main").appendChild(div);
 
-      div.appendChild(p1);
-      div.appendChild(numberRing);
-      div.appendChild(bookImg);
-      div.appendChild(p2);
-      document.querySelector("main").appendChild(div);
+        if (i == localStorage.length - 1) {
+          let TxtBox = document.createElement("div");
+          let remainBook1 = document.createElement("p");
+          let remainBook1TextNode = document.createTextNode("remain: " + remain);
+          TxtBox.style.color = "white";
+          TxtBox.style.textAlign = "center";
+          TxtBox.style.fontSize = "12vw";
+          TxtBox.style.fontFamily = "'EB Garamond', serif";
+          remainBook1.style.textShadow =
+            "0 0 10px rgb(255, 72, 0), 0 0 20px rgb(255, 72, 0), 0 0 23px rgb(255, 72, 0), 0 0 25px rgb(255, 72, 0), 0 0 38px rgb(255, 72, 0)";
+          remainBook1.appendChild(remainBook1TextNode);
+          TxtBox.appendChild(remainBook1);
+          document.querySelector("main").prepend(TxtBox);
+          // document.querySelector("main").appendChild(TxtBox);
+        }
     }
   }
   if (allRead) {
@@ -214,3 +218,7 @@ if (localStorage.length > 0) {
     document.querySelector("main").appendChild(TxtBox);
   }
 }
+
+document.querySelector('#logo').addEventListener('click', function () {
+  location.href = "../html/main.html";
+})
