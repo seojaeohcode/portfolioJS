@@ -217,6 +217,20 @@ if (localStorage.length > 0) {
 
     document.querySelector("main").appendChild(TxtBox);
   }
+}else{
+  let TxtBox = document.createElement("div");
+    let noBook1 = document.createElement("p");
+    let noBook1TextNode = document.createTextNode("NoBook!");
+    TxtBox.style.color = "white";
+    TxtBox.style.textAlign = "center";
+    TxtBox.style.fontSize = "12vw";
+    TxtBox.style.fontFamily = "'EB Garamond', serif";
+    noBook1.style.textShadow =
+      "0 0 10px rgb(197, 197, 0), 0 0 20px rgb(197, 197, 0), 0 0 23px rgb(197, 197, 0), 0 0 25px rgb(197, 197, 0), 0 0 38px rgb(197, 197, 0)";
+    noBook1.appendChild(noBook1TextNode);
+    TxtBox.appendChild(noBook1);
+
+    document.querySelector("main").appendChild(TxtBox);
 }
 
 document.querySelector('#logo').addEventListener('click', function () {
