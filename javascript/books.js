@@ -573,8 +573,19 @@ document.querySelector("#submit").addEventListener("click", function () {
       }
 
       for (let i = 0; i < delBtn.length; i++) {
-        delBtn[i].addEventListener("click", removeItem);
+        delBtn[i].addEventListener("focusin", function (e) {
+          e.target.style.backgroundColor = "gray";
+        });
       }
+      for (let i = 0; i < delBtn.length; i++) {
+        delBtn[i].addEventListener("focusout", function (e) {
+          e.target.style.backgroundColor = "#F5E8C7";
+        });
+      }
+      for (let i = 0; i < delBtn.length; i++) {
+        delBtn[i].addEventListener("mouseup", removeItem);
+      }
+      
       for (let i = 0; i < checkBtn.length; i++) {
         checkBtn[i].addEventListener("click", checkItem);
         // console.log(checkBtn[i].checked);
@@ -597,6 +608,7 @@ function log() {
 }
 
 function removeItem(e) {
+  // e.preventDefault();
   const n = e.target.parentNode;
 
   // 지운 아이템의 넘버링 가져오기
@@ -666,7 +678,18 @@ function checkItem(e) {
 }
 
 for (let i = 0; i < delBtn.length; i++) {
-  delBtn[i].addEventListener("click", removeItem);
+  delBtn[i].addEventListener("focusin", function (e) {
+    e.target.style.backgroundColor = "gray";
+  });
+}
+for (let i = 0; i < delBtn.length; i++) {
+  delBtn[i].addEventListener("focusout", function (e) {
+    e.target.style.backgroundColor = "#F5E8C7";
+  });
+}
+
+for (let i = 0; i < delBtn.length; i++) {
+  delBtn[i].addEventListener("mouseup", removeItem);
 }
 
 for (let i = 0; i < checkBtn.length; i++) {
@@ -676,3 +699,4 @@ for (let i = 0; i < checkBtn.length; i++) {
 document.querySelector('#logo').addEventListener('click', function () {
   location.href = "../html/main.html";
 })
+
